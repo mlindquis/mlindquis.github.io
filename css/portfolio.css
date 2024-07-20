@@ -4,12 +4,6 @@
 body {
 	background-color: #FFDFDF;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-	width:100%;
-	margin:0px;
-}
-
-img {
-	align: center;
 }
 
 h1 {
@@ -27,7 +21,9 @@ h2 {
 
 ul.responsive {
 	background-color:#C9C8C7;
-	padding:10px;
+    padding-top:10px;
+	padding-bottom:10px;
+	
 }
 
 ul.responsive img {
@@ -41,13 +37,16 @@ nav {
 	background-color:#787878;
 	text-align: right;
 	width: 100%;
-	padding-top: 10px;
+	padding-top: 30px;
 	padding-bottom: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 35px;
+	padding-right: 35px;
 	vertical-align: middle;
 	overflow:visible;
 	margin-bottom:10px;
+	margin-left:-25px;
+	margin-right:-25px;
+	margin-top:-25px;
 }
 
 .navlogo {
