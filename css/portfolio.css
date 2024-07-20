@@ -203,13 +203,6 @@ h2.skills {
   -o-animation: load 2s 0s;
 }
 
-.bar.front::before{
-  background-color: #E8CECE;
-}
-.bar.back::before{
-  background-color: #E8CECE;
-}
-
 .bar.learning::before {
   width: calc(20% - 10px);
 }
@@ -236,7 +229,7 @@ hr {
 	clear:both;
 }
 
-.basic {
+.basictext {
 	padding-left:5%;
 	padding-right:5%;
 	
