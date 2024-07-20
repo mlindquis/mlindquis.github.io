@@ -234,3 +234,7 @@ hr {
 .bar.expert::before {
   width: calc(100% - 10px);
 }
+
+.stupid {
+	
+}
