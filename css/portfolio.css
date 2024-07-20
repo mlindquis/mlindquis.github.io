@@ -3,7 +3,6 @@
 
 body {
 	background-color: #FFDFDF;
-	text-align: center;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	width:100%;
 	margin:0px;
@@ -14,8 +13,15 @@ img {
 }
 
 h1 {
-	font-size: 4em;
-	align:center;
+	font-size: 2em;
+	text-align: center;
+	padding:20px;
+	width:100%;
+}
+
+h2 {
+	text-align:left;
+	padding:20px;
 }
 
 
@@ -41,6 +47,7 @@ nav {
 	padding-right: 10px;
 	vertical-align: middle;
 	overflow:visible;
+	margin-bottom:10px;
 }
 
 .navlogo {
@@ -70,7 +77,167 @@ nav li {
 	color:#FFBFBF;
 }
 
+footer {
+	text-align:center;
+}
 
+.description {
+	text-align:center;
+	padding-left:15%;
+	padding-right:15%;
+	
+}
 
+.hobbico {
+  display: inline-grid;
+  grid-template-columns: 520px 520px;
+  grid-template-rows:auto;
+  border-sizing:border-box;
+  width:100%;
+  grid-gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
 
+figure.hobbico img {
+	padding:10px;
+}
 
+figure {
+	text-align:center;
+}
+figure img {
+	padding:10px;
+}
+.whitebox {
+	background-color: white;
+	padding:10px;
+
+}
+
+.maintext {
+	text-align:center;
+	padding-left:15%;
+	padding-right:15%;
+	
+}
+
+dt , dd{
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:1.25em;
+}
+
+.row {
+  display: flex;
+  margin:20px;
+}
+
+.column {
+  flex: 50%;
+}
+
+h3, h4 {
+	text-align:center;
+}
+
+dt {
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+h3.workplace, h2.workplace, p.workplace {
+	text-align:left;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+h2.workplace {
+	text-decoration:underline;
+}
+
+.workplace {
+	padding-top:0;
+	padding-bottom:0;
+}
+
+aside {
+	float:right;
+	width:30%;
+	margin-right:20px;
+	padding-left:0px;
+	padding-right:20px;
+	margin-top:30px;
+	padding-bottom:50px;
+}
+
+.graybox {
+	background-color:#DADADA;
+}
+
+h2.skills {
+	text-align:center;
+	font-style:italic;
+}
+
+.bar{
+  background-color: #787878;
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+  list-style-type: none;
+}
+.bar::before{
+  content:  attr(data-skill);
+  background-color: #E8CECE;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+
+.bar.front::before{
+  background-color: #E8CECE;
+}
+.bar.back::before{
+  background-color: #E8CECE;
+}
+
+.bar.learning::before {
+  width: calc(20% - 10px);
+}
+.bar.basic::before {
+  width: calc(40% - 10px);
+}
+.bar.intermediate::before {
+  width: calc(60% - 10px);
+}
+.bar.advanced::before {
+  width: calc(80% - 10px);
+}
+.bar.expert::before {
+  width: calc(100% - 10px);
+}
+
+.profile {
+	float:left;
+	 border-radius:70%;
+	margin:20px;
+}
+
+hr {
+	clear:both;
+}
+
+.basic {
+	padding-left:5%;
+	padding-right:5%;
+	
+}
