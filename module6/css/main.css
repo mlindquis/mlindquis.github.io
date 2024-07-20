@@ -203,7 +203,7 @@ header h1 {
 	margin-right: .5em;
 	float: left;
 	padding-left: 110px;
-	background: url(../_images/desolve_logo.png) no-repeat left center;
+	background: url("../../images/gallery_banner.jpg") no-repeat left center;
 	color: #fff;
 }
 
@@ -260,22 +260,22 @@ header a, header a:hover {
 }
 
 a.gallery {
-	background: url(../_images/icon_sprites_25.png) no-repeat 0 3px;
+	background: url(../images/icon_sprites_25.png) no-repeat 0 3px;
 	padding-left: 22px;
 }
 
 a.gear {
-	background: url(../_images/icon_sprites_25.png) no-repeat 38px -98px;
+	background: url(../images/icon_sprites_25.png) no-repeat 38px -98px;
 	padding-left: 22px;
 }
 
 a.interact {
-	background: url(../_images/icon_sprites_25.png) no-repeat 62px -197px;
+	background: url(../images/icon_sprites_25.png) no-repeat 62px -197px;
 	padding-left: 24px;
 }
 
 a.shop {
-	background: url(../_images/icon_sprites_25.png) no-repeat 6px -297px;
+	background: url(../images/icon_sprites_25.png) no-repeat 6px -297px;
 	padding-left: 20px;
 }
 
@@ -284,7 +284,7 @@ a.shop {
 	height: 350px;
 	padding-left: 50px;
 	overflow: hidden;
-	background: url(../_images/gallery_banner.jpg) no-repeat;
+	background: url("../images/gallery_banner.jpg") no-repeat;
 	margin-bottom: 4em;
 	position: relative;
 }
@@ -324,7 +324,7 @@ article > h1 {
 	font-size: 1.8em;
 	border-bottom: 2px solid rgb(76, 67, 65);
 	margin-bottom: 1.5em;
-	background: url(../_images/icon_sprites_50.png) no-repeat
+	background: url(../images/icon_sprites_50.png) no-repeat
 }
 
 article h2 {
@@ -412,15 +412,15 @@ article h2 a:hover {
 }
 
 .philly .preview {
-	background: url(../_images/philly_banner.jpg) no-repeat;
+	background: url(../images/philly_banner.jpg) no-repeat;
 }
 
 .chicago .preview {
-	background: url(../_images/chicago_banner.jpg) no-repeat;
+	background: url(../images/chicago_banner.jpg) no-repeat;
 }
 
 .nyc .preview {
-	background: url(../_images/nyc_banner.jpg) no-repeat;
+	background: url(../images/nyc_banner.jpg) no-repeat;
 }
 
 /* individual gallery styles*/
@@ -709,7 +709,7 @@ input[type="search"] {
 	border: none;
 	color:rgb(76, 67, 65);
 	padding-left: 95px;
-	background: url(../_images/tweet_90.png) no-repeat;
+	background: url(../images/tweet_90.png) no-repeat;
 }
 
 #pageFooter form {
