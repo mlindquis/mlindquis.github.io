@@ -1,0 +1,6 @@
+C:\Users\melin\Documents\GitHub\mlindquis.github.io\js\slick\jquery-1.11.0.min.js
+integrity="sha384-Fj8/AX4/PyI7Pz81ej8/Hj9zFFdyPz8/Pz8FPz8/Py0/Pz8/P2psPz9RPxc/Hj8LDQo="
+
+C:\Users\melin\Documents\GitHub\mlindquis.github.io\js\slick\jquery-migrate-1.2.1.min.js
+integrity="sha384-Pz8pMnI/P1APPz9UHD9RPCg/Nz8/Pz8sPz9IAiY/Pz8/PXQ/fT8/PzwEZH4/Pz9pDQo="
+
