@@ -6,6 +6,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -23,7 +24,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -82,10 +84,6 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
-	body {
-		background: #f0f0f0;
-	}
-
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
@@ -100,7 +98,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro';
 		font-weight: 300;
-		color: #777;
+		color: #993399;
 		line-height: 1.65em;
 		font-size: 15pt;
 	}
@@ -108,7 +106,7 @@ input, select, textarea {
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 600;
 		text-transform: uppercase;
-		color: #888;
+		color: #0099ff;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -136,7 +134,7 @@ input, select, textarea {
 		-webkit-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 		-ms-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 		transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
-		color: #666;
+		color: #004d80;
 		text-decoration: none;
 		border-bottom: solid 1px #ddd;
 	}
@@ -149,17 +147,17 @@ input, select, textarea {
 		}
 
 		a:hover {
-			color: #ed786a;
+			color: #009999;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 
 			a:hover strong {
-				color: #ed786a;
+				color: #009999;
 			}
 
 	strong, b {
 		font-weight: 600;
-		color: #666;
+		color: #004d80;
 	}
 
 	em, i {
@@ -1486,7 +1484,7 @@ input, select, textarea {
 		-ms-transition: opacity 0.25s ease-in-out;
 		transition: opacity 0.25s ease-in-out;
 		display: inline-block;
-		border: solid 6px #ebebeb !important;
+		border: solid 6px #099999 !important;
 	}
 
 		.image:hover {
@@ -1634,7 +1632,7 @@ input, select, textarea {
 				top: 2.6em;
 				display: block;
 				font-size: 0.8em;
-				background: #878787;
+				background: #004d80;
 				color: #e4e4e4;
 				width: 2em;
 				height: 2em;
@@ -1657,7 +1655,7 @@ input, select, textarea {
 	form label {
 		font-weight: 600;
 		text-transform: uppercase;
-		color: #888;
+		color: #0099ff;
 		display: block;
 		margin: 0 0 1em 0;
 	}
@@ -1674,7 +1672,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		display: block;
 		border: 0;
-		background: #e8e8e8;
+		background: #e8e8;
 		width: 100%;
 		box-shadow: inset 2px 2px 0px 0px rgba(0, 0, 0, 0.1);
 		border-radius: 4px;
@@ -1740,7 +1738,7 @@ input, select, textarea {
 		}
 
 		table thead {
-			background: #878787;
+			background: #004d80;
 			color: #fff;
 			font-weight: 400;
 			text-transform: uppercase;
@@ -1751,7 +1749,7 @@ input, select, textarea {
 		}
 
 		table tfoot {
-			background: #F0F0F0;
+			background: #f0f0f0;
 			border-top: solid 2px #E5E5E5;
 		}
 
@@ -1769,7 +1767,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		position: relative;
 		display: inline-block;
-		background: #ed786a;
+		background: #009999;
 		color: #fff !important;
 		text-transform: uppercase;
 		border-radius: 4px;
@@ -1800,7 +1798,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background: #fd887a;
+			background: #00ffff;
 		}
 
 		input[type="button"]:active,
@@ -1808,7 +1806,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background: #ed786a;
+			background: #009999;
 		}
 
 		input[type="button"].alt,
@@ -1816,7 +1814,7 @@ input, select, textarea {
 		input[type="reset"].alt,
 		button.alt,
 		.button.alt {
-			background: #878787;
+			background: #004d80;
 		}
 
 			input[type="button"].alt:hover,
@@ -1832,7 +1830,7 @@ input, select, textarea {
 			input[type="reset"].alt:active,
 			button.alt:active,
 			.button.alt:active {
-				background: #878787;
+				background: #004d80;
 			}
 
 /* Box */
@@ -1842,7 +1840,7 @@ input, select, textarea {
 	}
 
 	.box.excerpt .date {
-		background: #878787;
+		background: #004d80;
 		color: #fff;
 		font-weight: 400;
 		text-transform: uppercase;
@@ -1917,7 +1915,7 @@ input, select, textarea {
 		#header h1 {
 			font-family: 'Arvo';
 			font-weight: 700;
-			color: #ed786a;
+			color: #009999;
 			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
 			font-size: 3em;
 			letter-spacing: 13px;
@@ -1930,7 +1928,7 @@ input, select, textarea {
 		#header p {
 			text-transform: uppercase;
 			font-weight: 400;
-			color: #888;
+			color: #0099ff;
 			margin: 2.5em 0 0 0;
 			font-size: 0.85em;
 			letter-spacing: 3px;
@@ -1961,15 +1959,15 @@ input, select, textarea {
 				text-decoration: none;
 				text-transform: uppercase;
 				font-weight: 400;
-				color: #777;
+				color: #993399;
 				outline: 0;
 				display: block;
 			}
 
 				#nav > ul > li > a:before {
 					display: inline-block;
-					background: #878787;
-					color: #e4e4e4;
+					background: #004d80;
+					color: #FFFFFF;
 					width: 2.25em;
 					font-size: 0.8em;
 					height: 2.25em;
@@ -2001,13 +1999,13 @@ input, select, textarea {
 
 			#nav > ul > li.active > a:before,
 			#nav > ul > li:hover > a:before {
-				background: #ED786A;
+				background: #009999;
 				color: #fff;
 			}
 
 			#nav > ul > li.active > a > span,
 			#nav > ul > li:hover > a > span {
-				color: #ED786A;
+				color: #009999;
 			}
 
 	.dropotron {
@@ -2074,7 +2072,7 @@ input, select, textarea {
 				-webkit-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 				-ms-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 				transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
-				color: #ed786a;
+				color: #009999;
 			}
 
 /* Features */
@@ -2101,7 +2099,7 @@ input, select, textarea {
 		position: relative;
 		overflow: hidden;
 		background: #fff;
-		color: #fff;
+		color: #ccffcc;
 		text-align: center;
 		border-top: solid 2px #e5e5e5;
 		border-bottom: solid 2px #e5e5e5;
@@ -2460,7 +2458,7 @@ input, select, textarea {
 				border-right: solid 2px #3c3c3c;
 				font-weight: 400;
 				text-transform: uppercase;
-				color: #888;
+				color: #0099ff;
 				letter-spacing: 2px;
 				font-size: 0.85em;
 			}
@@ -2748,3 +2746,4 @@ ul.notnav * {
 h3.bigger {
 	font-size:1.5em;
 }
+
