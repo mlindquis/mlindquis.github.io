@@ -2721,23 +2721,30 @@ h3.center {
 	text-align: center;
 }
 
-h3.experience {
+h4.experience {
 	margin:0;
 	padding:0;
+	font-size: 1em;
 	
 }
 
-h4.smaller {
+h5.smaller {
 	text-transform:none;
 	line-height:normal;
 	font-weight:300;
 }
 
 ul.notnav {
-	line-height:normal;
 	padding-left: 2em;
 }
 
 ul.notnav * {
-	padding: 5px;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	margin-top: 0;
+	margin-bottom:0
+}
+
+h3.bigger {
+	font-size:1.5em;
 }
