@@ -1,0 +1,253 @@
+/*Global Styling Match Sample*/
+h2 {
+	text-align: center;
+}
+
+.banner {
+	width:80%;
+	margin:0 auto;
+	display:block;
+	
+}
+
+.matchwidth {
+	width:300px;
+}
+/*Match Float Positions Page Three*/
+.matchposrt {
+	float:right;
+	width:25%;
+	margin:2em;
+}
+
+.matchposlft {
+	float:left;
+	width:25%;
+	margin:2em;
+}
+/*First Header and Footer*/
+footer,  div#main > header:first-of-type {
+	width:100%;
+	background-color: #FFFFFF;
+	z-index:100;
+	height:150px;
+	padding:2px;
+}
+
+/*Fixed First Header*/
+div#main > header:first-of-type {
+	position: fixed;
+	padding-left:15px;
+	top:0;
+	background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
+	color:#FFFFFF;
+	display:table;
+	
+}
+
+div#main > header:first-of-type h1 {
+	vertical-align:middle; 
+    display:table-cell; 
+}
+
+/*Fixed Footer*/
+footer {
+	position:fixed;
+	bottom:0;
+	clear:both;
+	display:table;
+}
+
+footer ul {
+	vertical-align:middle;
+	display:table-cell;
+}
+
+/*Wrapper Position*/
+#wrapper {
+	margin-top:154px;
+	margin-bottom:154px;
+	position:relative;
+}
+
+/*Page One Absolute Positions*/
+#fixleft {
+	position:absolute;
+	background-color:#FFFFFF;
+	width:200px;
+	top:0;
+	padding:2px;
+}
+
+.articles {
+	position:absolute;
+	top:0;
+	left:204px;
+	width:960px;
+	height:400px;
+	overflow-x:scroll;
+	overflow-y:scroll;
+	padding:2px;
+}
+
+/*Page Two Float Positions*/
+
+#floatleft {
+	float:left;
+	width:200px;
+	height:100%
+	background-color:#FFFFFF;
+	padding:2px;
+	margin:10px;
+}
+
+.articles2 {
+	height:400px;
+	width:960px;
+	overflow-x:scroll;
+	overflow-y:scroll;
+	padding:2px;
+}
+
+/*Page Three Responsive Layout*/
+#floatleftres {
+	float:left;
+	width:20%;
+	background-color:#FFFFFF;
+	padding:2.5%;
+}
+
+.articles3 {
+	width:70%;
+	padding:2.5%;
+	float:right;
+}
+
+/*Page Four Inline Block Display*/
+.inlineleft {
+	display:inline-block;
+	vertical-align:top;
+	width:20%;
+	min-width:200px;
+	
+}
+
+.articles4 {
+	display:inline-block;
+	vertical-align:top;
+	width:75%;
+	min-width:400px;
+	min-height:400px;
+}
+
+/*Page Five Inline Block Photos*/
+.centergallery {
+	position:absolute;
+	margin:0 auto;
+} 
+
+.gallery {
+	display:inline-block;
+	text-align:center;	
+}
+
+figure.gallery img {
+	width:200px;
+	height:200px;
+	object-fit:cover;
+	box-shadow: 10px 10px 7.5px gray;
+}
+
+.position {
+	object-position: top;
+}
+
+/*Extra Credit Hover Gallery*/
+.container {
+  position: relative;
+}
+
+.overlay {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+	display:flex;
+	align-items:center;
+	justify-content: center;	
+}
+
+.container:hover .overlay {
+  opacity: .75;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute; 
+}
+
+/*EXtra Credit Navigation Animation*/
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 150; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+
+/*Format Nav Text*/
+.left {
+	text-align:left;
+	font-weight:bold;
+	text-decoration:underline;
+	font-size:large;
+}
