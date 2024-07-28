@@ -1,7 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
-
+@media screen and (min-width:768px) {
 /*Global Declarations*/
+
 body {
 	background-color: #FFDFDF;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
@@ -45,9 +46,16 @@ hr {
 }
 
 /*Carousel Settings*/
+.slick-frame {
+    visibility: hidden;
+}
+.slick-frame.slick-initialized {
+    visibility: visible;
+}
+	
 ul.responsive {
 	background-color:#C9C8C7;
-    padding:10px 45px 10px 45px;
+    padding:2% 45px 2% 45px;
 }
 
 ul.responsive img {
@@ -63,20 +71,31 @@ ul.responsive img:hover {
 .contain {
 	width: 75%;
    margin: 0px auto;
-	
 }
+	
+section.contain p {
+	text-align:center;
+	padding:0 15%;
+	background-color:#DADADA;
+	border:thin black solid;
+	font-size: 2em;
+	}
+	
+
 
 .pdf {
    height:1000px;
    width: 100%;
    overflow: visible;
    position: relative;
+	margin:0;
 }
 .pdfshort {
 	height:450px;
 	width:100%;
 	overflow:visible;
 	position:relative;
+	margin:0;
 }
 figure.pdf object, figure.pdfshort object {
 	width:100%;
@@ -89,7 +108,12 @@ figure.pdf object, figure.pdfshort object {
 .whitebox {
 	background:white;
 }
+	
 /*Nav Setting*/
+div.customselect, div.select-selected, div.select-items, div.select-hide, select {
+		display:none;
+	}
+	
 nav {
 	display: inline-block;
 	background-color:#787878;
@@ -98,9 +122,7 @@ nav {
 	vertical-align: middle;
 	overflow:hidden;
 	margin:0;
-	width:98%;
-	
-	
+	width:98%;	
 }
 
 .navlogo {
@@ -129,31 +151,34 @@ nav li {
 .active {
 	color:#FFBFBF;
 }
+	
+
 
 /*Hobbico Grid*/
 .hobbico {
   display: inline-grid;
-  grid-template-columns: 520px 520px;
+  grid-template-columns: 45% 45%;
   grid-template-rows:auto;
   border-sizing:border-box;
   width:100%;
-  grid-gap: 10px;
+  grid-gap: 2%;
   justify-content: center;
   justify-items: center;
   align-items: center;
+  padding:0;
+  margin:0;
 }
 
 figure.hobbico img {
-	padding:10px;
+	padding:2%;
+	width:100%;
 }
 
 /*Figures*/
 figure {
 	text-align:center;
 }
-figure img {
-	padding:10px;
-}
+
 
 /*Course Description*/
 dt , dd {
@@ -203,6 +228,10 @@ section.workplace > * {
 	text-align:left;
 	padding:0 4% 0 4%;
 }
+	
+	section.workplace p.center {
+		text-align:center;
+	}
 
 h1.experiencehd {
 	border:thin black solid;
@@ -226,7 +255,6 @@ section.workplace h2 {
 .profile {
 	float:left;
 	padding:2%;
-	vertical-align:middle;
 }
 
 figure.profile img {
@@ -299,4 +327,705 @@ aside h2 {
 /*Footer Settings*/
 footer {
 	text-align:center;
+}
+	
+	aside.fixedtop {
+		width:50px;
+		height:50px;
+		border:medium #000000 solid;
+		background-color:#DADADA;
+		text-transform:uppercase;
+		position:fixed;
+		bottom:40px;
+		right:20px;
+		padding:4px;
+		display:flex;
+		justify-content:center;
+		align-items: center;
+		font-weight:bold;
+	}
+}
+
+@media screen and (min-width:481px) and (max-width:767px) {
+
+/*Global Declarations*/
+body {
+	background-color: #FFDFDF;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	padding:0;
+	margin:0;
+}
+
+h1 {
+	font-size: 2em;
+	text-align: center;
+	padding:2%;
+	margin:0;
+}
+
+h2 {
+	text-align:left;
+	padding:2%;
+	margin:0;
+}
+
+content p {
+	text-align:center;
+	padding-left:15%;
+	padding-right:15%;
+	
+}
+
+h3, h4 {
+	text-align:center;
+	margin:0;
+	padding:2%;
+}
+
+dt {
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+hr {
+	clear:both;
+}
+
+/*Carousel Settings*/
+.slick-frame {
+    visibility: hidden;
+}
+.slick-frame.slick-initialized {
+    visibility: visible;
+}
+	
+ul.responsive {
+	background-color:#C9C8C7;
+    padding:2%px 45px 2% 45px;
+}
+
+ul.responsive img {
+	max-width: 25vw;
+	object-fit:contain;
+}
+
+ul.responsive img:hover {
+	outline-color:#D4BABA;
+	outline-width:thick;	
+}
+
+.contain {
+	width: 75%;
+   margin: 0px auto;
+	
+}
+
+section.contain p {
+	text-align:center;
+	padding:0 15%;
+	background-color:#DADADA;
+	border:thin black solid;
+	font-size: 2em;
+}
+
+.pdf {
+   height:400px;
+   width: 100%;
+   overflow: visible;
+   position: relative;
+	margin:0;
+}
+.pdfshort {
+	height:300px;
+	width:100%;
+	overflow:visible;
+	position:relative;
+	margin:0;
+}
+figure.pdf object, figure.pdfshort object {
+	width:100%;
+	height:100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.whitebox {
+	background:white;
+}
+/*Nav Setting*/
+nav {
+	display: flex;
+  	align-items: center; /* Center items vertically */
+  	justify-content:space-between; /* Optional: Adjust as needed */
+  	background-color: #787878;
+  	padding: 1%;
+  	margin: 0;
+  	width: 100%;
+  	position: relative;
+  	box-sizing: border-box; /* Ensure padding is included in the total width */
+}
+
+.navlogo {
+	float:left;
+	width:100%;
+}
+/*Dropdown for small screens*/	
+nav > ul {
+	display:none;
+	}
+	
+	/* The container must be positioned relative: */
+.custom-select {
+  	position: relative;
+  	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	width:40%;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: #FFDFDF;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #5C473B transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #5C473B transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #5C473B;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #FFDFDF;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 150;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.2);
+}	
+
+/*Hobbico Grid*/
+.hobbico {
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+figure.hobbico img {
+	padding:2%;
+	width:80%
+}
+
+/*Figures*/
+figure {
+	text-align:center;
+}
+figure img {
+	padding:2%;
+}
+
+/*Course Description*/
+dt , dd {
+	padding-left:2%;
+	padding-right:2%;
+	padding-top:1em;
+}
+
+
+div.column h2 {
+	text-decoration:underline;
+}
+
+div.column h3 {
+	border:thin black solid;
+	margin:0 2% 0 2%;
+	background-color:#DADADA;
+}
+
+div.column strong {
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 1.25em;
+}
+
+.coursehd {
+	padding:1% 2% 1% 2%;
+	text-align:center;
+}
+
+.degree {
+	font-weight:bold;
+	padding-top:.5em;
+	margin:0;
+	font-size:1.125em;
+	text-align:center;
+}
+
+/*Experience Page*/
+section.workplace > * {
+	text-align:left;
+	padding:0 4% 0 4%;
+}
+	section.workplace p.center {
+		text-align:center;
+	}
+
+h1.experiencehd {
+	border:thin black solid;
+	margin:2% 2% 0 2%;
+	background-color:#DADADA;
+	padding:1%;
+	text-align:center;
+	
+}
+
+
+section.workplace ul {
+	margin-left:2em;
+}
+section.workplace h2 {
+	text-decoration:underline;
+	padding:1% 2% 1% 2%;
+}
+
+/*Profile Page*/
+.profile {
+	padding:2%;
+	vertical-align:middle;
+}
+
+figure.profile img {
+	 border-radius:70%;
+	width:325px;
+}
+
+
+.lefttext {
+	padding-left:5%;
+	padding-right:5%;
+	text-align:left;
+	
+}
+
+/*Skill Bar Aside*/
+aside {
+	width:50%;
+	padding:2%;
+	margin:2% auto;
+	background-color:#DADADA;
+}
+
+aside h2 {
+	text-align:center;
+	font-style:italic;
+}
+
+
+.bar{
+  background-color: #787878;
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+.bar::before{
+  content:  attr(data-skill);
+  background-color: #E8CECE;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+
+}
+
+.bar.learning::before {
+  width: calc(20% - 10px);
+}
+.bar.basic::before {
+  width: calc(40% - 10px);
+}
+.bar.intermediate::before {
+  width: calc(60% - 10px);
+}
+.bar.advanced::before {
+  width: calc(80% - 10px);
+}
+.bar.expert::before {
+  width: calc(100% - 10px);
+}
+
+/*Footer Settings*/
+footer {
+	text-align:center;
+}
+	aside.fixedtop {
+		width:50px;
+		height:50px;
+		border:medium #000000 solid;
+		background-color:#DADADA;
+		text-transform:uppercase;
+		position:fixed;
+		bottom:40px;
+		right:20px;
+		padding:4px;
+		display:flex;
+		justify-content:center;
+		align-items: center;
+		font-weight:bold;
+	}
+}
+
+@media screen and (max-width:480px) {
+
+/*Global Declarations*/
+body {
+	background-color: #FFDFDF;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	padding:0;
+	margin:0;
+}
+
+h1 {
+	font-size: 2em;
+	text-align: center;
+	padding:2%;
+	margin:0;
+}
+
+h2 {
+	text-align:left;
+	padding:2%;
+	margin:0;
+}
+
+content p {
+	text-align:center;
+	padding-left:2%;
+	padding-right:2%;
+	
+}
+	
+section.contain p {
+	text-align:center;
+	padding:0 15%;
+	background-color:#DADADA;
+	border:thin black solid;
+	font-size: 2em;
+}
+
+h3, h4 {
+	text-align:center;
+	margin:0;
+	padding:2%;
+}
+
+dt {
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+hr {
+	clear:both;
+}
+
+/*Carousel Settings*/
+.responsive {
+    visibility: hidden;
+}
+.responsive.slick-initialized {
+    visibility: visible;
+}	
+
+ul.responsive {
+	background-color:#C9C8C7;
+    padding:2% 45px 2% 45px;
+}
+
+ul.responsive img {
+	max-width: 60vw;
+	object-fit:contain;
+}
+
+ul.responsive img:hover {
+	outline-color:#D4BABA;
+	outline-width:thick;	
+}
+
+.contain {
+	width: 75%;
+   margin: 0px auto;
+	
+}
+
+.pdf {
+   height:400px;
+   width: 100%;
+   overflow: visible;
+   position: relative;
+	margin:0;
+}
+.pdfshort {
+	height:200px;
+	width:100%;
+	overflow:visible;
+	position:relative;
+	margin:0;
+}
+figure.pdf object, figure.pdfshort object {
+	width:100%;
+	height:100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.whitebox {
+	background:white;
+}
+/*Nav Setting*/
+nav {
+	display: flex;
+	flex-direction:column;
+  	align-items: center;
+  	background-color: #787878;
+  	padding: 1%;
+  	margin: 0;
+  	width: 100%;
+  	position: relative;
+  	box-sizing: border-box; /* Ensure padding is included in the total width */
+}
+
+.navlogo {
+	width:100%;
+}
+/*Dropdown for small screens*/	
+nav > ul {
+	display:none;
+	}
+	
+	/* The container must be positioned relative: */
+.custom-select {
+  	position: relative;
+  	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	width:100%;
+	max-width:250px;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: #FFDFDF;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #5C473B transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #5C473B transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #5C473B;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #FFDFDF;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 150;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/*Hobbico Grid*/
+.hobbico {
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+figure.hobbico img {
+	padding:2%;
+	width:80%;
+}
+
+/*Figures*/
+figure {
+	text-align:center;
+}
+figure img {
+	padding:2%;
+}
+
+/*Course Description*/
+dt , dd {
+	padding-left:2%;
+	padding-right:2%;
+	padding-top:1em;
+}
+
+div.column h2 {
+	text-decoration:underline;
+}
+
+div.column h3 {
+	border:thin black solid;
+	margin:0 2% 0 2%;
+	background-color:#DADADA;
+}
+
+div.column strong {
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size: 1.25em;
+}
+
+.coursehd {
+	padding:1% 2% 1% 2%;
+	text-align:center;
+}
+
+.degree {
+	font-weight:bold;
+	padding-top:.5em;
+	margin:0;
+	font-size:1.125em;
+	text-align:center;
+}
+
+/*Experience Page*/
+section.workplace > * {
+	text-align:left;
+	padding:0 4% 0 4%;
+}
+	section.workplace p.center {
+		text-align:center;
+	}
+
+h1.experiencehd {
+	border:thin black solid;
+	margin:2% 2% 0 2%;
+	background-color:#DADADA;
+	padding:1%;
+	text-align:center;
+	
+}
+
+
+section.workplace ul {
+	margin-left:2em;
+}
+section.workplace h2 {
+	text-decoration:underline;
+	padding:1% 2% 1% 2%;
+}
+
+/*Profile Page*/
+.profile {
+	padding:2%;
+	vertical-align:middle;
+}
+
+figure.profile img {
+	 border-radius:70%;
+	width:250px;
+}
+
+
+.lefttext {
+	padding-left:2%;
+	padding-right:2%;
+	text-align:left;
+	
+}
+
+/*Skill Bar Aside*/
+aside {
+	display:none;
+}
+
+
+
+/*Footer Settings*/
+footer {
+	text-align:center;
+}
+	aside.fixedtop {
+		width:50px;
+		height:50px;
+		border:medium #000000 solid;
+		background-color:#DADADA;
+		text-transform:uppercase;
+		position:fixed;
+		bottom:40px;
+		right:20px;
+		padding:4px;
+		display:flex;
+		justify-content:center;
+		align-items: center;
+		font-weight:bold;
+	}
 }
