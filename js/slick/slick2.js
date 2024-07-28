@@ -3010,11 +3010,9 @@
 
 }));
 
-//Loads Slick
-
- $('.responsive').slick ({
-  //dots: true,
-	  arrows:true,
+/*Initialize Slick*/
+$('.responsive').slick({
+  dots: false,
   infinite: false,
   speed: 300,
   slidesToShow: 4,
@@ -3026,9 +3024,7 @@
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
-        //dots: true
-		  arrows:true
-		 
+        dots: false
       }
     },
     {
@@ -3050,4 +3046,4 @@
     // instead of a settings object
   ]
 });
-
+				
