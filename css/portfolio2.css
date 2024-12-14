@@ -83,7 +83,11 @@ section.contain p {
 	font-size: 2em;
 	}
 	
-
+.indent {
+	margin-left: 0; 
+	position: relative; 
+	left: 4em;
+	}
 
 .pdf {
    height:1000px;
@@ -430,6 +434,12 @@ section.contain p {
 	font-size: 2em;
 }
 
+.indent {
+	margin-left: 0; 
+	position: relative; 
+	left: 4em;
+	}
+
 .pdf {
    height:400px;
    width: 100%;
@@ -748,6 +758,12 @@ section.contain p {
 	background-color:#DADADA;
 	border:thin black solid;
 }
+	
+.indent {
+	margin-left: 0; 
+	position: relative; 
+	left: 4em;
+	}
 
 h3, h4 {
 	text-align:center;
